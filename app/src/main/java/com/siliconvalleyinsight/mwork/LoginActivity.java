@@ -30,6 +30,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.SignInButton;
 import java.util.ArrayList;
 import java.util.List;
+import android.content.Intent;
 
 
 /**
@@ -127,6 +128,8 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
      */
     public void attemptLogin() {
         if (mAuthTask != null) {
+            Intent mainMenu = new Intent(this, TaskMenuActivity.class);
+            startActivity(mainMenu);
             return;
         }
 

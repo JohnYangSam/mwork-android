@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/home_fragment_container"
+    tools:context="com.siliconvalleyinsight.mwork.FragmentHomeTab">
+
+    <!-- Hold two parts: task categories in grid layout and tab widget at bottom -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/gridLayout">
+
+
+        <ImageButton
+            android:contentDescription="@string/one_hand_desc"
+            android:id="@+id/one_hand_task_btn"
+            android:src="@drawable/one_hand_icon"
+            android:layout_width="@dimen/task_category_icon_width"
+            android:layout_height="@dimen/task_category_icon_height"
+            android:layout_margin="@dimen/task_category_icon_margin"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:contentDescription="@string/two_hand_desc"
+            android:id="@+id/two_hand_task_btn"
+            android:src="@drawable/two_hand_icon"
+            android:layout_width="@dimen/task_category_icon_width"
+            android:layout_height="@dimen/task_category_icon_height"
+            android:layout_margin="@dimen/task_category_icon_margin"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:contentDescription="@string/secluded_desc"
+            android:id="@+id/secluded_task_btn"
+            android:src="@drawable/secluded_icon"
+            android:layout_width="@dimen/task_category_icon_width"
+            android:layout_height="@dimen/task_category_icon_height"
+            android:layout_margin="@dimen/task_category_icon_margin"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:contentDescription="@string/random_desc"
+            android:id="@+id/random_task_btn"
+            android:src="@drawable/random_icon"
+            android:layout_width="@dimen/task_category_icon_width"
+            android:layout_height="@dimen/task_category_icon_height"
+            android:layout_margin="@dimen/task_category_icon_margin"
+            android:layout_row="1"
+            android:layout_column="1" />
+    </GridLayout>
+
+</FrameLayout>

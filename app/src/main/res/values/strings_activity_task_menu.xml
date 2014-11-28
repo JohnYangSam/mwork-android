@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings related to task menu -->
+    <!--<string name="prompt_email">Email</string>-->
+    <string name="one_hand_desc">Tasks that only require one hand. Great for when you\'re on the go.</string>
+    <string name="two_hand_desc">Tasks that require two hands. Typically take a little more time and focus than 1-handed tasks.</string>
+    <string name="secluded_desc">Tasks that require seclusion and a greater amount of time and attention to complete.</string>
+    <string name="random_desc">For the adventurous - generates a task from a random category!</string>
+    <string name="home_tab_name">Home</string>
+    <!--<string name="payment_tab_name">Payment</string>-->
+    <!--<string name="settings_tab_name">Settings</string>-->
+</resources>
