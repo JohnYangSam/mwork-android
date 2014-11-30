@@ -2,10 +2,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/payment_fragment_container"
     tools:context="com.siliconvalleyinsight.mwork.FragmentPaymentTab">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="frag_two_test" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <!-- scales photo -->
+            <ImageView
+                android:layout_width="@dimen/user_icon_dimen"
+                android:layout_height="@dimen/user_icon_dimen"
+                android:id="@+id/user_icon"
+                android:src="@drawable/icon_user_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="28sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/user_name"
+                android:id="@+id/user_name"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_marginStart="@dimen/payment_info_margin"
+            android:layout_marginEnd="@dimen/payment_info_margin">
+
+            <!-- Current balance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/curr_balance"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/wage_header"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tasks_completed_header"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/banks_and_cards_header"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <!-- Takes user to cash out screen -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/string_cash_out_btn"
+                android:id="@+id/cash_out_btn"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/wage"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <!-- Takes user to task history screen -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tasks_completed"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <!-- Takes user to edit payment info screen -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/account_number"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+        <!-- TODO: insert graph -->
+
+        </GridLayout>
+    </LinearLayout>
 </FrameLayout>

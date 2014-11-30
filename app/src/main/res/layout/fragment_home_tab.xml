@@ -15,7 +15,6 @@
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:id="@+id/gridLayout">
 
-
         <ImageButton
             android:contentDescription="@string/one_hand_desc"
             android:id="@+id/one_hand_task_btn"
