@@ -1,3 +1,4 @@
+# Standard
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -7,3 +8,9 @@
 /build
 *.iml
 *.log
+
+# More build files
+*.apk
+*.ap_
+*.dex
+*.class
