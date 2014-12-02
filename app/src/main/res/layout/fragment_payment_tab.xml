@@ -24,7 +24,7 @@
                 android:layout_width="@dimen/user_icon_dimen"
                 android:layout_height="@dimen/user_icon_dimen"
                 android:id="@+id/user_icon"
-                android:src="@drawable/icon_user_default" />
+                android:src="@drawable/person_icon" />
 
             <TextView
                 android:layout_width="match_parent"

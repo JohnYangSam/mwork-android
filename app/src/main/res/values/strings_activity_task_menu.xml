@@ -6,6 +6,8 @@
     <string name="one_hand_desc">Tasks that only require one hand. Great for when you\'re on the go.</string>
     <string name="two_hand_desc">Tasks that require two hands. Typically take a little more time and focus than 1-handed tasks.</string>
     <string name="secluded_desc">Tasks that require seclusion and a greater amount of time and attention to complete.</string>
+    <string name="single_session_desc">Tasks that require a single, continuous session, but have a higher payout.</string>
+    <string name="traveling_desc">Tasks that may require traveling or activity.</string>
     <string name="random_desc">For the adventurous - generates a task from a random category!</string>
     <string name="home_tab_name">Home</string>
     <!--<string name="payment_tab_name">Payment</string>-->
