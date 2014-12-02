@@ -127,7 +127,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
      */
     public void attemptLogin() {
         if (mAuthTask != null) {
-            Intent mainMenu = new Intent(this, TaskSelectionActivity.class);
+            Intent mainMenu = new Intent(this, HomeActivity.class);
             startActivity(mainMenu);
             return;
         }

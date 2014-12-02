@@ -7,19 +7,19 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 
 
-public class TaskSelectionActivity extends FragmentActivity {
+public class HomeActivity extends FragmentActivity {
 
     private FragmentTabHost mTabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_selection);
+        setContentView(R.layout.activity_home);
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
 
         mTabHost.addTab(mTabHost.newTabSpec("Home").setIndicator("Home", null),
-            FragmentHomeTab.class, null);
+            FragmentTaskSelectionTab.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("Payment").setIndicator("Payment", null),
             FragmentPaymentTab.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("More").setIndicator("More", null),
