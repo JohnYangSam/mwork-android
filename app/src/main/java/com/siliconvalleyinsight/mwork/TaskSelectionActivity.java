@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class TaskMenuActivity extends FragmentActivity {
+public class TaskSelectionActivity extends FragmentActivity {
 
     private FragmentTabHost mTabHost;
 

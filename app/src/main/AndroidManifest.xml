@@ -45,7 +45,7 @@
             android:label="@string/title_activity_mwork_base_nav" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.TaskMenuActivity"
+            android:name=".TaskSelectionActivity"
             android:label="@string/title_activity_task_menu" >
 
             <intent-filter>

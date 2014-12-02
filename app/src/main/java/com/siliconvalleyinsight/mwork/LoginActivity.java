@@ -5,7 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 
 import android.app.LoaderManager.LoaderCallbacks;
-import android.content.ContentResolver;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -128,7 +127,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
      */
     public void attemptLogin() {
         if (mAuthTask != null) {
-            Intent mainMenu = new Intent(this, TaskMenuActivity.class);
+            Intent mainMenu = new Intent(this, TaskSelectionActivity.class);
             startActivity(mainMenu);
             return;
         }
