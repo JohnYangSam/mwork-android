@@ -5,8 +5,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.view.View;
-import android.widget.ImageButton;
 
 
 public class TaskSelectionActivity extends FragmentActivity {
@@ -16,7 +14,7 @@ public class TaskSelectionActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_menu);
+        setContentView(R.layout.activity_task_selection);
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
 
