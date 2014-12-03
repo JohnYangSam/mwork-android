@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
+    private static String TAG = "FTST";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,9 +23,21 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_task_selection_tab, container, false);
 
-        // has to use getActivity to use findViewById
+        // Get handles to the buttons from the inflated fragment
         ImageButton oneHandTaskBtn = (ImageButton) v.findViewById(R.id.one_hand_task_btn);
+        ImageButton twoHandTaskBtn = (ImageButton) v.findViewById(R.id.two_hand_task_btn);
+        ImageButton secludedTaskBtn = (ImageButton) v.findViewById(R.id.secluded_task_btn);
+        ImageButton singleSessionTaskBtn = (ImageButton) v.findViewById(R.id.single_session_task_button);
+        ImageButton travelingTaskBtn = (ImageButton) v.findViewById(R.id.traveling_task_btn);
+        ImageButton randomTaskBtn = (ImageButton) v.findViewById(R.id.random_task_btn);
+
+        // Set the fragment to capture botton clicks
         oneHandTaskBtn.setOnClickListener(this);
+        twoHandTaskBtn.setOnClickListener(this);
+        secludedTaskBtn.setOnClickListener(this);
+        singleSessionTaskBtn.setOnClickListener(this);
+        travelingTaskBtn.setOnClickListener(this);
+        randomTaskBtn.setOnClickListener(this);
         return v;
     }
 
@@ -32,10 +45,43 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
     public void onClick(View v) {
         // testing with LoginActivity
         Log.e("TEST", "hit here");
-        if (v.getId() == R.id.one_hand_task_btn) {
-            Log.e("TEST", "hit here" + v.getId() + "  " + R.id.one_hand_task_btn);
-            Intent one_hand_task_intent = new Intent(getActivity(), LoginActivity.class);
-            getActivity().startActivity(one_hand_task_intent);
+
+        Intent intent = null;
+
+        switch(v.getId()) {
+            case R.id.one_hand_task_btn:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+
+            case R.id.two_hand_task_btn:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+
+            case R.id.secluded_task_btn:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+
+            case R.id.single_session_task_button:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+
+            case R.id.traveling_task_btn:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+
+            case R.id.random_task_btn:
+                log.v(TAG, "oneHandTaskBtn clicked");
+                intent = new Intent(getActivity(), LoginActivity.class);
+                break;
+        }
+
+        if (intent != null) {
+            getActivity().startActivity(intent);
         }
     }
 }
