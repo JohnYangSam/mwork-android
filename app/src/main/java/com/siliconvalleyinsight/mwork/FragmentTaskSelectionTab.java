@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class FragmentTaskSelectionTab extends Fragment {
+public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,16 +23,20 @@ public class FragmentTaskSelectionTab extends Fragment {
         View v = inflater.inflate(R.layout.fragment_task_selection_tab, container, false);
 
         // has to use getActivity to use findViewById
-        ImageButton oneHandTaskBtn = (ImageButton) getActivity().findViewById(R.id.one_hand_task_btn);
-        Log.e("TEST", "" + (oneHandTaskBtn == null));
-        oneHandTaskBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // testing with LoginActivity
-                Intent one_hand_task_intent = new Intent(getActivity(), LoginActivity.class);
-                getActivity().startActivity(one_hand_task_intent);
-            }
-        });
+        ImageButton oneHandTaskBtn = (ImageButton) v.findViewById(R.id.one_hand_task_btn);
+        oneHandTaskBtn.setOnClickListener(this);
         return v;
     }
+
+    @Override
+    public void onClick(View v) {
+        // testing with LoginActivity
+        Log.e("TEST", "hit here");
+        if (v.getId() == R.id.one_hand_task_btn) {
+            Log.e("TEST", "hit here" + v.getId() + "  " + R.id.one_hand_task_btn);
+            Intent one_hand_task_intent = new Intent(getActivity(), LoginActivity.class);
+            getActivity().startActivity(one_hand_task_intent);
+        }
+    }
 }
+
