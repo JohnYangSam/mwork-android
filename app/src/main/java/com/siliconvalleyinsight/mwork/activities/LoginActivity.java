@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -28,6 +29,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import com.siliconvalleyinsight.mwork.R;
+import com.siliconvalleyinsight.mwork.singletons.MWorkApp;
+import com.siliconvalleyinsight.mwork.singletons.MWorkStateManager;
 
 /**
  * A login screen that offers login via email/password.
@@ -40,7 +43,10 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"
+            "foo@example.com:hello",
+            "bar@example.com:world",
+            "johnys@stanford.edu:johnys",
+            "test@test.com:test"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -286,6 +292,10 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
             showProgress(false);
 
             if (success) {
+                MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
+                mStateManager.setLogin(true);
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

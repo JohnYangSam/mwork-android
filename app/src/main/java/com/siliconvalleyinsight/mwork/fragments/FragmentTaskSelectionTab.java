@@ -34,7 +34,7 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
         ImageButton travelingTaskBtn = (ImageButton) v.findViewById(R.id.traveling_task_btn);
         ImageButton randomTaskBtn = (ImageButton) v.findViewById(R.id.random_task_btn);
 
-        // Set the fragment to capture botton clicks
+        // Set the fragment to capture button clicks
         oneHandTaskBtn.setOnClickListener(this);
         twoHandTaskBtn.setOnClickListener(this);
         secludedTaskBtn.setOnClickListener(this);
