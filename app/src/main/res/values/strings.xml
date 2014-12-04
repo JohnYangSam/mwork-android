@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_mwork_base_nav">MworkBaseNavActivity</string>
-    <string name="title_activity_home">Home</string>
+    <string name="title_activity_home">mWork</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
