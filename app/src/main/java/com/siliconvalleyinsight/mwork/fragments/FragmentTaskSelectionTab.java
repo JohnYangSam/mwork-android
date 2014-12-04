@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.siliconvalleyinsight.mwork.R;
+import com.siliconvalleyinsight.mwork.activities.LoginActivity;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
@@ -53,32 +54,32 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
         switch(v.getId()) {
             case R.id.one_hand_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
 
             case R.id.two_hand_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
 
             case R.id.secluded_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
 
             case R.id.single_session_task_button:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
 
             case R.id.traveling_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
 
             case R.id.random_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-//                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LoginActivity.class);
                 break;
         }
 
