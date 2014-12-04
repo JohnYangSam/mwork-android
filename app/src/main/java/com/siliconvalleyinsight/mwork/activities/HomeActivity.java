@@ -1,10 +1,15 @@
-package com.siliconvalleyinsight.mwork;
+package com.siliconvalleyinsight.mwork.activities;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+
+import com.siliconvalleyinsight.mwork.R;
+import com.siliconvalleyinsight.mwork.fragments.FragmentPaymentTab;
+import com.siliconvalleyinsight.mwork.fragments.FragmentSettingsTab;
+import com.siliconvalleyinsight.mwork.fragments.FragmentTaskSelectionTab;
 
 
 public class HomeActivity extends FragmentActivity {

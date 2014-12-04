@@ -1,4 +1,4 @@
-package com.siliconvalleyinsight.mwork;
+package com.siliconvalleyinsight.mwork.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+
+import com.siliconvalleyinsight.mwork.R;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {

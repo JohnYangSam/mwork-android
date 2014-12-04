@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/payment_fragment_container"
-    tools:context="com.siliconvalleyinsight.mwork.FragmentPaymentTab">
+    tools:context="com.siliconvalleyinsight.mwork.fragments.FragmentPaymentTab">
 
 
     <LinearLayout

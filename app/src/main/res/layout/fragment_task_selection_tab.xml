@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/home_fragment_container"
-    tools:context="com.siliconvalleyinsight.mwork.FragmentTaskSelectionTab">
+    tools:context="com.siliconvalleyinsight.mwork.fragments.FragmentTaskSelectionTab">
 
     <!-- Hold two parts: task categories in grid layout and tab widget at bottom -->
     <GridLayout
