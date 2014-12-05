@@ -71,7 +71,7 @@
             android:layout_marginRight="10dp"/>
 
 
-        <TextView
+        <EditText
             android:id="@+id/cashout_value"
             android:text="$5.00"
             android:textSize="22dp"
@@ -120,7 +120,7 @@
 
     <Button
         android:id="@+id/paypal_btn"
-        android:text="paypal"
+        android:text="Paypal"
         style="?android:textAppearanceSmall"
         android:textColor="@color/white"
         android:background="@color/green"
@@ -131,7 +131,7 @@
 
     <Button
         android:id="@+id/venmo_btn"
-        android:text="venmo"
+        android:text="Venmo"
         style="?android:textAppearanceSmall"
         android:textColor="@color/white"
         android:background="@color/green"
