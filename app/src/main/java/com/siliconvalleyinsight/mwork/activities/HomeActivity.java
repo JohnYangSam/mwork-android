@@ -1,18 +1,15 @@
 package com.siliconvalleyinsight.mwork.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.fragments.FragmentPaymentTab;
 import com.siliconvalleyinsight.mwork.fragments.FragmentSettingsTab;
 import com.siliconvalleyinsight.mwork.fragments.FragmentTaskSelectionTab;
-import com.siliconvalleyinsight.mwork.singletons.MWorkApp;
-import com.siliconvalleyinsight.mwork.singletons.MWorkStateManager;
 
 
 public class HomeActivity extends FragmentActivity {
@@ -39,12 +36,12 @@ public class HomeActivity extends FragmentActivity {
         super.onResume();
         // Wizard of Oz login check
 
-        //Comment out forced login for testing
-        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
-        if (!mStateManager.getLogin()) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-        }
+//        //Comment out forced login for testing
+//        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
+//        if (!mStateManager.getLogin()) {
+//            Intent intent = new Intent(this, LoginActivity.class);
+//            startActivity(intent);
+//        }
     }
 
     @Override
