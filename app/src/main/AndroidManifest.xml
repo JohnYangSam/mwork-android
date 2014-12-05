@@ -22,14 +22,14 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
     <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".singletons.MWorkApp"
@@ -130,6 +130,10 @@
         <activity
             android:name=".activities.SecludedTaskActivityBase"
             android:label="@string/title_activity_secluded_task_activity_base" >
+        </activity>
+        <activity
+            android:name=".activities.PhotoTaskActivity"
+            android:label="@string/title_activity_photo_task" >
         </activity>
     </application>
 

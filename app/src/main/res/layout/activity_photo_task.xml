@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.siliconvalleyinsight.mwork.activities.PhotoTaskActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_task_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:text="Photo Task"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_task_subtitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Bookshelf Surveying:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_task_explanation"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="Take a picture of the McGraw Hill book display in the Stanford Bookstore. Make sure you can see the entire display and its positioning in the store."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/take_photo_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:src="@drawable/camera_icon_hi"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
