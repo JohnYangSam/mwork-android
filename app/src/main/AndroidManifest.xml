@@ -50,6 +50,10 @@
             android:name=".activities.OneHandTaskActivity"
             android:label="@string/title_activity_one_hand_task" >
         </activity>
+        <activity
+            android:name=".activities.CashOutActivity"
+            android:label="@string/title_activity_cash_out" >
+        </activity>
     </application>
 
 </manifest>

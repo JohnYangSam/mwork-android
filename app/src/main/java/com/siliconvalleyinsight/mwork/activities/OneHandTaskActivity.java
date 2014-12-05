@@ -1,19 +1,20 @@
 package com.siliconvalleyinsight.mwork.activities;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+
+import com.siliconvalleyinsight.mwork.fragments.FragmentOneHandTask;
 
 import com.siliconvalleyinsight.mwork.R;
 
-public class OneHandTaskActivity extends Activity {
+public class OneHandTaskActivity extends Activity implements FragmentOneHandTask.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class OneHandTaskActivity extends Activity {
         setContentView(R.layout.activity_one_hand_task);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new FragmentOneHandTask())
                     .commit();
         }
     }
@@ -60,5 +61,9 @@ public class OneHandTaskActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_one_hand_task, container, false);
             return rootView;
         }
+    }
+
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

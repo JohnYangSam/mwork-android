@@ -4,11 +4,10 @@
     <!-- Home Activity and General String -->
 
     <string name="app_name">mWork</string>
-
     <string name="action_settings">Settings</string>
-
     <string name="title_activity_home">mWork</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cash_out">CashOutActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

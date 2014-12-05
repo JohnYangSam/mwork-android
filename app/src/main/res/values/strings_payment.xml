@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Hard-coded username, curr_balance, wage, tasks_completed, account_number -->
+    <!-- Strings for payments and sub tabs/activities -->
+    <!-- Hard-coded username, curr_balance, wage, tasks_completed, account_number, cash out amount -->
     <!-- TODO replace above with actual information (not hard-coded) -->
     <string name="user_name">John YS</string>
     <string name="string_cash_out_btn">Cash Out</string>
@@ -11,4 +12,15 @@
     <string name="wage">$6.72/hr</string>
     <string name="tasks_completed">64</string>
     <string name="account_number">****1234</string>
+    <string name="account_name">Wells Fargo</string>
+    <string name="cash_out_title">AMOUNT TO CASH OUT</string>
+    <string name="current_balance">$20.00</string>
+    <string name="your_balance_header">Your Balance</string>
+    <string name="bank_accounts_header">BANK ACCOUNTS</string>
+    <string name="cash_out_btn">CASH OUT</string>
+    <string name="arrival_date">Arrives on Monday, December 8</string>
+    <string name="zero_dollars">$0.00</string>
+    <string name="cash_out_congratulations">Congratulations! You have cashed out</string>
+    <string name="cash_out_amount">$20.00</string>
+    <string name="return_home_btn">Return to Home</string>
 </resources>
