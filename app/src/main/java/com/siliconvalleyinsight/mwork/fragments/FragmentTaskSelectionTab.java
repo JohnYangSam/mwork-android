@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.activities.CashOutActivity;
+import com.siliconvalleyinsight.mwork.activities.LanguageSelectionActivity;
 import com.siliconvalleyinsight.mwork.activities.LoginActivity;
 import com.siliconvalleyinsight.mwork.activities.OneHandTaskActivity;
 
@@ -66,7 +67,7 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
 
             case R.id.secluded_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), LanguageSelectionActivity.class);
                 break;
 
             case R.id.single_session_task_button:

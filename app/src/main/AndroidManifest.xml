@@ -64,11 +64,11 @@
             android:label="@string/title_activity_cash_out" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.AgeSelectionActivity"
+            android:name=".activities.AgeSelectionActivity"
             android:label="@string/title_activity_age_selection" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.BetterCashOutActivity"
+            android:name=".activities.BetterCashOutActivity"
             android:label="@string/title_activity_better_cash_out" >
         </activity>
         <activity
@@ -88,7 +88,7 @@
             android:label="@string/title_activity_language_selection" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.LocationEntryActivity"
+            android:name=".activities.LocationEntryActivity"
             android:label="@string/title_activity_location_entry" >
         </activity>
         <activity

@@ -5,14 +5,12 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
-import android.content.ContentResolver;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -26,11 +24,13 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.List;
+
 import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.singletons.MWorkApp;
 import com.siliconvalleyinsight.mwork.singletons.MWorkStateManager;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A login screen that offers login via email/password.
@@ -73,7 +73,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
                 if (id == R.id.login || id == EditorInfo.IME_NULL) {
-                    attemptLogin();
+                    attemptLogin(false);
                     return true;
                 }
                 return false;
@@ -84,7 +84,16 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+                attemptLogin(true);
+            }
+        });
+
+        Button mRegisterButton = (Button) findViewById(R.id.register_button);
+        mRegisterButton.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                attemptLogin(true);
             }
         });
 
@@ -102,7 +111,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
      * If there are form errors (invalid email, missing fields, etc.), the
      * errors are presented and no actual login attempt is made.
      */
-    public void attemptLogin() {
+    public void attemptLogin(boolean register) {
         if (mAuthTask != null) {
             return;
         }
@@ -117,7 +126,6 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
 
         boolean cancel = false;
         View focusView = null;
-
 
         // Check for a valid password, if the user entered one.
         if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
@@ -142,6 +150,14 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
             // form field with an error.
             focusView.requestFocus();
         } else {
+
+            // If we are registering take us to the language selection page
+            if (register) {
+                Intent intent = new Intent(this, LanguageSelectionActivity.class);
+                startActivity(intent);
+                return;
+            }
+
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);

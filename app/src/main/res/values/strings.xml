@@ -27,4 +27,8 @@
     <string name="title_activity_two_handed">TwoHandedActivity</string>
     <string name="title_activity_two_handed_task">TwoHandedTaskActivity</string>
 
+    <string-array name="languages_array">
+        <item>English</item>
+    </string-array>
+
 </resources>

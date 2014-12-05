@@ -1,9 +1,11 @@
-package com.siliconvalleyinsight.mwork;
+package com.siliconvalleyinsight.mwork.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.siliconvalleyinsight.mwork.R;
 
 
 public class LocationEntryActivity extends Activity {
