@@ -5,7 +5,14 @@
     <dimen name="task_category_icon_margin">5dp</dimen>
     <dimen name="task_category_icon_width">125dp</dimen>
     <dimen name="task_category_icon_height">125dp</dimen>
+
+    <!-- Payments Screen-->
     <dimen name="user_icon_dimen">92dp</dimen>
     <dimen name="payment_info_margin">30dp</dimen>
     <dimen name="text_margin">10dp</dimen>
+
+    <!-- More / Settings Screen -->
+    <dimen name="settings_icon_width">58dp</dimen>
+    <dimen name="settings_icon_height">58dp</dimen>
+    <dimen name="settings_font_size">18sp</dimen>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_help_center">Help Center</string>
+    <string name="settings_terms_and_policies">Terms &amp; Policies</string>
+    <string name="settings_log_out">Log Out</string>
+</resources>

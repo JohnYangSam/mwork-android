@@ -1,10 +1,137 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.siliconvalleyinsight.mwork.fragments.FragmentSettingsTab">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="frag_three_test" />
+    <TextView
+        android:id="@+id/settings_profile_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_icon_height"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/settings_font_size"
+        android:textColor="@color/black"
+        android:text="@string/settings_profile" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/settings_profile_icon"
+        android:layout_width="@dimen/settings_icon_height"
+        android:layout_height="@dimen/settings_icon_width"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/settings_profile_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/person_icon" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/settings_profile_text"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:id="@+id/settings_help_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_icon_height"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/divider_1"
+        android:textSize="@dimen/settings_font_size"
+        android:textColor="@color/black"
+        android:text="@string/settings_help_center" />
+
+    <ImageView
+        android:id="@+id/settings_"
+        android:layout_width="@dimen/settings_icon_height"
+        android:layout_height="@dimen/settings_icon_width"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/settings_help_center_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/question_mark_icon" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/settings_help_center_text"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:id="@+id/settings_terms_and_policies_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_icon_height"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/divider_2"
+        android:textSize="@dimen/settings_font_size"
+        android:textColor="@color/black"
+        android:text="@string/settings_terms_and_policies" />
+
+    <ImageView
+        android:id="@+id/settings_terms_and_policies_icon"
+        android:layout_width="@dimen/settings_icon_height"
+        android:layout_height="@dimen/settings_icon_width"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/settings_terms_and_policies_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/star_icon" />
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/settings_terms_and_policies_text"
+        android:background="#c0c0c0"/>
+
+     <TextView
+        android:id="@+id/settings_log_out_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_icon_height"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/divider_3"
+         android:textSize="@dimen/settings_font_size"
+        android:textColor="@color/black"
+        android:text="@string/settings_log_out" />
+
+    <ImageView
+        android:id="@+id/settings_log_out_icon"
+        android:layout_width="@dimen/settings_icon_height"
+        android:layout_height="@dimen/settings_icon_width"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/settings_log_out_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/power_button_icon" />
+
+
+</RelativeLayout>

@@ -135,7 +135,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal">
 
-            <!-- TODO: insert graph -->
+        <!-- TODO: insert graph -->
 
         </GridLayout>
     </LinearLayout>
