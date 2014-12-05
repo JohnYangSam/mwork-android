@@ -23,7 +23,7 @@
         android:targetSdkVersion="15" />
 
     <application
-        android:name="com.siliconvalleyinsight.mwork.singletons.MWorkApp"
+        android:name=".singletons.MWorkApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -45,6 +45,10 @@
             android:name=".activities.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".activities.OneHandTaskActivity"
+            android:label="@string/title_activity_one_hand_task" >
         </activity>
     </application>
 

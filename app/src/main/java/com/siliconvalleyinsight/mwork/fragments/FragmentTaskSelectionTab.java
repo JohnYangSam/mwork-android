@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.activities.LoginActivity;
+import com.siliconvalleyinsight.mwork.activities.OneHandTaskActivity;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
@@ -54,7 +55,7 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
         switch(v.getId()) {
             case R.id.one_hand_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), OneHandTaskActivity.class);
                 break;
 
             case R.id.two_hand_task_btn:
