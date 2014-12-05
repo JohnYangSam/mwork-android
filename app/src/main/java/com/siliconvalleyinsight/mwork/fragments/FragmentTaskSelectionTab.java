@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.siliconvalleyinsight.mwork.R;
-import com.siliconvalleyinsight.mwork.activities.CashOutActivity;
 import com.siliconvalleyinsight.mwork.activities.LanguageSelectionActivity;
 import com.siliconvalleyinsight.mwork.activities.LoginActivity;
 import com.siliconvalleyinsight.mwork.activities.OneHandedTaskActivity;
+import com.siliconvalleyinsight.mwork.activities.TwoHandedTaskActivity;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
@@ -62,7 +62,7 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
 
             case R.id.two_hand_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-                intent = new Intent(getActivity(), CashOutActivity.class);
+                intent = new Intent(getActivity(), TwoHandedTaskActivity.class);
                 break;
 
             case R.id.secluded_task_btn:

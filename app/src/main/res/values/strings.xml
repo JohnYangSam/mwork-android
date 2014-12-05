@@ -51,4 +51,19 @@
         <item>@drawable/dog_test_16</item>
     </string-array>
 
+    <!-- two handed activity strings -->
+    <string-array name="two_handed_questions">
+        <item>What is your favorite color and why?</item>
+        <item>Briefly explain your artistic background.</item>
+
+        <item>What is your favorite movie seen in the last 6 months and why did you like this movie?</item>
+        <item>If you could meet any current celebrity, who would it be and why?</item>
+
+        <item>What is the hottest application you\'ve seen recently and who do you know who uses it?</item>
+        <item>Describe the application on the home screen of your mobile phone.</item>
+
+        <item>Describe your home town.</item>
+        <item>Write a short paragraph on an important event that recently occurred in your home town.</item>
+    </string-array>
+
 </resources>
