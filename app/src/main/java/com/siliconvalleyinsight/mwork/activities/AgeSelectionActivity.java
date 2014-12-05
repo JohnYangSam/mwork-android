@@ -28,7 +28,6 @@ public class AgeSelectionActivity extends Activity {
             }
         });
 
-
         Button mNextButton = (Button) findViewById(R.id.btnNext);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
