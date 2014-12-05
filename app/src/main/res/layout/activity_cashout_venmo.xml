@@ -23,7 +23,7 @@
 
             <TextView
                 android:id="@+id/venmo_prompt_label"
-                android:text="Please input the following information to link your venmo account."
+                android:text="Please input the following information to link your Venmo account."
                 android:textSize="20dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_gravity="center"
@@ -57,7 +57,7 @@
 
             <Button
                 android:id="@+id/verify_button"
-                android:text="verify"
+                android:text="Verify"
                 style="?android:textAppearanceSmall"
                 android:textColor="@color/white"
                 android:background="@color/green"

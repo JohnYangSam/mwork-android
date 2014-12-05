@@ -67,7 +67,7 @@
 
             <Button
                 android:id="@+id/verify_button"
-                android:text="verify"
+                android:text="Verify"
                 style="?android:textAppearanceSmall"
                 android:textColor="@color/white"
                 android:background="@color/green"
