@@ -38,11 +38,13 @@ public class HomeActivity extends FragmentActivity {
     protected void onResume() {
         super.onResume();
         // Wizard of Oz login check
-        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
-        if (!mStateManager.getLogin()) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-        }
+
+        //Comment out forced login for testing
+//        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
+//        if (!mStateManager.getLogin()) {
+//            Intent intent = new Intent(this, LoginActivity.class);
+//            startActivity(intent);
+//        }
     }
 
     @Override
