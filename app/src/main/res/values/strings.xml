@@ -30,9 +30,7 @@
     <string-array name="languages_array">
         <item>English</item>
     </string-array>
-
-    // Simulated database for dog test pictures
-    <string-array name="dog_test_imgs">
+    // Simulated database for dog test pictures    <string-array name="dog_test_imgs">
         <item>@drawable/dog_test_1</item>
         <item>@drawable/dog_test_2</item>
         <item>@drawable/dog_test_3</item>
@@ -55,15 +53,14 @@
     <string-array name="two_handed_questions">
         <item>What is your favorite color and why?</item>
         <item>Briefly explain your artistic background.</item>
-
         <item>What is your favorite movie seen in the last 6 months and why did you like this movie?</item>
         <item>If you could meet any current celebrity, who would it be and why?</item>
-
         <item>What is the hottest application you\'ve seen recently and who do you know who uses it?</item>
         <item>Describe the application on the home screen of your mobile phone.</item>
-
         <item>Describe your home town.</item>
         <item>Write a short paragraph on an important event that recently occurred in your home town.</item>
     </string-array>
+
+    <string name="title_activity_secluded_task_activity_base">SecludedTaskActivityBase</string>
 
 </resources>

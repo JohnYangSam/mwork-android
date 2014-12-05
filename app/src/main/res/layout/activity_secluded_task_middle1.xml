@@ -68,7 +68,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/btnBack"
+                    android:id="@+id/back_button"
                     android:text="BACK"
                     android:background="@color/dark_gray"
                     android:layout_width="0dp"
@@ -78,7 +78,7 @@
                     android:layout_marginRight="10dp"/>
 
                 <Button
-                    android:id="@+id/btnNext"
+                    android:id="@+id/next_button"
                     android:text="NEXT"
                     android:textColor="@color/white"
                     android:background="@color/green"

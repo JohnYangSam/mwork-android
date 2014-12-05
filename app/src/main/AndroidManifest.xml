@@ -32,7 +32,7 @@
     <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <application
-        android:name="com.siliconvalleyinsight.mwork.singletons.MWorkApp"
+        android:name=".singletons.MWorkApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -42,7 +42,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.HomeActivity"
+            android:name=".activities.HomeActivity"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,12 +51,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.CashOutActivity"
+            android:name=".activities.CashOutActivity"
             android:label="@string/title_activity_cash_out" >
         </activity>
         <activity
@@ -68,19 +68,19 @@
             android:label="@string/title_activity_better_cash_out" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.CashoutBankActivity"
+            android:name=".activities.CashoutBankActivity"
             android:label="@string/title_activity_cashout_bank" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.CashoutPaypalActivity"
+            android:name=".activities.CashoutPaypalActivity"
             android:label="@string/title_activity_cashout_paypal" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.CashoutVenmoActivity"
+            android:name=".activities.CashoutVenmoActivity"
             android:label="@string/title_activity_cashout_venmo" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.LanguageSelectionActivity"
+            android:name=".activities.LanguageSelectionActivity"
             android:label="@string/title_activity_language_selection" >
         </activity>
         <activity
@@ -88,44 +88,48 @@
             android:label="@string/title_activity_location_entry" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.NameEntryActivity"
+            android:name=".activities.NameEntryActivity"
             android:label="@string/title_activity_name_entry" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.OneHandedTaskActivity"
+            android:name=".activities.OneHandedTaskActivity"
             android:label="@string/title_activity_one_handed_task" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SecludedTaskActivity"
+            android:name=".activities.SecludedTaskActivity"
             android:label="@string/title_activity_secluded_task" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SecludedTaskEndActivity"
+            android:name=".activities.SecludedTaskEndActivity"
             android:label="@string/title_activity_secluded_task_end" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SecludedTaskMiddle2Activity"
+            android:name=".activities.SecludedTaskMiddle2Activity"
             android:label="@string/title_activity_secluded_task_middle2" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SecludedTaskMiddle1Activity"
+            android:name=".activities.SecludedTaskMiddle1Activity"
             android:label="@string/title_activity_secluded_task_middle1" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SecludedTaskStartActivity"
+            android:name=".activities.SecludedTaskStartActivity"
             android:label="@string/title_activity_secluded_task_start" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.SetupAccountActivity"
+            android:name=".activities.SetupAccountActivity"
             android:label="@string/title_activity_setup_account" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.TwoHandedActivity"
+            android:name=".activities.TwoHandedActivity"
             android:label="@string/title_activity_two_handed" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.TwoHandedTaskActivity"
+            android:name=".activities.TwoHandedTaskActivity"
             android:label="@string/title_activity_two_handed_task" >
+        </activity>
+        <activity
+            android:name=".activities.SecludedTaskActivityBase"
+            android:label="@string/title_activity_secluded_task_activity_base" >
         </activity>
     </application>
 
