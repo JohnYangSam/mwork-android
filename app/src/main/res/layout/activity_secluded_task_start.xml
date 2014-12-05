@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.siliconvalleyinsight.mwork.activities.SecludedTaskStartActivity">
+
+    <ScrollView
+        android:id="@+id/secluded_start_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/secluded_prompt"
+                android:text="Please respond to each of the following questions in 1 or 2 sentences."
+                android:textSize="18dp"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/secluded_question_1"
+                android:text="Q1: What religion do you associate with, if any?"
+                android:textSize="18dp"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:layout_paddingBottom="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/secluded_question_1_response"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/secluded_question_2"
+                android:text="Q2: How did you become associated with this religion?"
+                android:textSize="18dp"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:layout_paddingBottom="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/secluded_question_2_response"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:id="@+id/next_button"
+                android:text="Next"
+                style="?android:textAppearanceSmall"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

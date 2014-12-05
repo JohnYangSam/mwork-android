@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.siliconvalleyinsight.mwork.BetterCashOutActivity">
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/total_balance_label"
+            android:text="Total Balance"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".10"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/total_balance_value"
+            android:text="$17.34"
+            android:textSize="22dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/cashout_label"
+            android:text="Cash Out Amount"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".10"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/cashout_value"
+            android:text="$5.00"
+            android:textSize="22dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".10"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/cashout_type"
+        android:text="Cash out with:"
+        android:textSize="22dp"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/bank_account_btn"
+        android:text="Bank Account"
+        style="?android:textAppearanceSmall"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/paypal_btn"
+        android:text="paypal"
+        style="?android:textAppearanceSmall"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/venmo_btn"
+        android:text="venmo"
+        style="?android:textAppearanceSmall"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+

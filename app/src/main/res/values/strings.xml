@@ -9,5 +9,22 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_cash_out">CashOutActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_age_selection">AgeSelectionActivity</string>
+    <string name="title_activity_better_cash_out">BetterCashOutActivity</string>
+    <string name="title_activity_cashout_bank">CashoutBankActivity</string>
+    <string name="title_activity_cashout_paypal">CashoutPaypalActivity</string>
+    <string name="title_activity_cashout_venmo">CashoutVenmoActivity</string>
+    <string name="title_activity_language_selection">LanguageSelectionActivity</string>
+    <string name="title_activity_location_entry">LocationEntryActivity</string>
+    <string name="title_activity_name_entry">NameEntryActivity</string>
+    <string name="title_activity_one_handed_task">OneHandedTaskActivity</string>
+    <string name="title_activity_secluded_task">SecludedTaskActivity</string>
+    <string name="title_activity_secluded_task_end">SecludedTaskEndActivity</string>
+    <string name="title_activity_secluded_task_middle2">SecludedTaskMiddle2Activity</string>
+    <string name="title_activity_secluded_task_middle1">SecludedTaskMiddle1Activity</string>
+    <string name="title_activity_secluded_task_start">SecludedTaskStartActivity</string>
+    <string name="title_activity_setup_account">SetupAccountActivity</string>
+    <string name="title_activity_two_handed">TwoHandedActivity</string>
+    <string name="title_activity_two_handed_task">TwoHandedTaskActivity</string>
 
 </resources>
