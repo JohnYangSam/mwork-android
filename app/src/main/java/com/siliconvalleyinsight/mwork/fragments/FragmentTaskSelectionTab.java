@@ -13,7 +13,7 @@ import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.activities.CashOutActivity;
 import com.siliconvalleyinsight.mwork.activities.LanguageSelectionActivity;
 import com.siliconvalleyinsight.mwork.activities.LoginActivity;
-import com.siliconvalleyinsight.mwork.activities.OneHandTaskActivity;
+import com.siliconvalleyinsight.mwork.activities.OneHandedTaskActivity;
 
 
 public class FragmentTaskSelectionTab extends Fragment implements View.OnClickListener {
@@ -57,7 +57,7 @@ public class FragmentTaskSelectionTab extends Fragment implements View.OnClickLi
         switch(v.getId()) {
             case R.id.one_hand_task_btn:
                 Log.v(TAG, "oneHandTaskBtn clicked");
-                intent = new Intent(getActivity(), OneHandTaskActivity.class);
+                intent = new Intent(getActivity(), OneHandedTaskActivity.class);
                 break;
 
             case R.id.two_hand_task_btn:

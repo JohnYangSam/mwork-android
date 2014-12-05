@@ -56,10 +56,6 @@
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="com.siliconvalleyinsight.mwork.activities.OneHandTaskActivity"
-            android:label="@string/title_activity_one_hand_task" >
-        </activity>
-        <activity
             android:name="com.siliconvalleyinsight.mwork.activities.CashOutActivity"
             android:label="@string/title_activity_cash_out" >
         </activity>
