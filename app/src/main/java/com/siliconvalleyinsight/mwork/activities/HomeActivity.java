@@ -40,11 +40,11 @@ public class HomeActivity extends FragmentActivity {
         // Wizard of Oz login check
 
         //Comment out forced login for testing
-//        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
-//        if (!mStateManager.getLogin()) {
-//            Intent intent = new Intent(this, LoginActivity.class);
-//            startActivity(intent);
-//        }
+        MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
+        if (!mStateManager.getLogin()) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override

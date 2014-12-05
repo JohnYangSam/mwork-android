@@ -1,14 +1,17 @@
 package com.siliconvalleyinsight.mwork.activities;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.siliconvalleyinsight.mwork.R;
+import com.siliconvalleyinsight.mwork.singletons.MWorkApp;
 
 
 public class LocationEntryActivity extends Activity {
@@ -28,8 +31,20 @@ public class LocationEntryActivity extends Activity {
 
         Button mNextButton = (Button) findViewById(R.id.btnNext);
         mNextButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                // Simulate login because the next activity is the home screen adn we should be logged in
+                ((MWorkApp) view.getContext().getApplicationContext()).getStateManager().setLogin(true);
+
+                // Let the user know that the registration is successful
+                Context context = getApplicationContext();
+                CharSequence text = "Registration Successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
             }

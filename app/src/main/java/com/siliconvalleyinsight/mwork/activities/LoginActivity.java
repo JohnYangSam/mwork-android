@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
@@ -24,6 +25,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.siliconvalleyinsight.mwork.R;
 import com.siliconvalleyinsight.mwork.singletons.MWorkApp;
@@ -84,7 +86,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin(true);
+                attemptLogin(false);
             }
         });
 
@@ -310,6 +312,15 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
             if (success) {
                 MWorkStateManager mStateManager = ((MWorkApp) getApplication()).getStateManager();
                 mStateManager.setLogin(true);
+
+                // Notify user of login
+                Context context = getApplicationContext();
+                CharSequence text = "Login Successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();
