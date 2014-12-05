@@ -31,4 +31,24 @@
         <item>English</item>
     </string-array>
 
+    // Simulated database for dog test pictures
+    <string-array name="dog_test_imgs">
+        <item>@drawable/dog_test_1</item>
+        <item>@drawable/dog_test_2</item>
+        <item>@drawable/dog_test_3</item>
+        <item>@drawable/dog_test_4</item>
+        <item>@drawable/dog_test_5</item>
+        <item>@drawable/dog_test_6</item>
+        <item>@drawable/dog_test_7</item>
+        <item>@drawable/dog_test_8</item>
+        <item>@drawable/dog_test_9</item>
+        <item>@drawable/dog_test_10</item>
+        <item>@drawable/dog_test_11</item>
+        <item>@drawable/dog_test_12</item>
+        <item>@drawable/dog_test_13</item>
+        <item>@drawable/dog_test_14</item>
+        <item>@drawable/dog_test_15</item>
+        <item>@drawable/dog_test_16</item>
+    </string-array>
+
 </resources>
