@@ -5,7 +5,7 @@
     <!-- TODO replace above with actual information (not hard-coded) -->
     <string name="user_name">John YS</string>
     <string name="string_cash_out_btn">Cash Out</string>
-    <string name="curr_balance">$10.80</string>
+    <string name="curr_balance">$17.84</string>
     <string name="wage_header">Wage</string>
     <string name="tasks_completed_header">Tasks Completed</string>
     <string name="banks_and_cards_header">Banks and Cards</string>

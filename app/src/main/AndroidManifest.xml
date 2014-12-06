@@ -43,6 +43,7 @@
 
         <activity
             android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,97 +54,120 @@
         <activity
             android:name=".activities.LoginActivity"
             android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
             android:name=".activities.CashOutActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_cash_out" >
         </activity>
         <activity
             android:name=".activities.AgeSelectionActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_age_selection" >
         </activity>
         <activity
             android:name=".activities.BetterCashOutActivity"
+            android:screenOrientation="portrait"
             android:label="Cash Out" >
         </activity>
         <activity
             android:name=".activities.CashoutBankActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_cashout_bank" >
         </activity>
         <activity
             android:name=".activities.CashoutPaypalActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_cashout_paypal" >
         </activity>
         <activity
             android:name=".activities.CashoutVenmoActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_cashout_venmo" >
         </activity>
         <activity
             android:name=".activities.LanguageSelectionActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_language_selection" >
         </activity>
         <activity
             android:name=".activities.LocationEntryActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_location_entry" >
         </activity>
         <activity
             android:name=".activities.NameEntryActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_name_entry" >
         </activity>
         <activity
             android:name=".activities.OneHandedTaskActivity"
+            android:screenOrientation="portrait"
             android:label="One Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_secluded_task" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskEndActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_secluded_task_end" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskMiddle2Activity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_secluded_task_middle2" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskMiddle1Activity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_secluded_task_middle1" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskStartActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_secluded_task_start" >
         </activity>
         <activity
             android:name=".activities.SetupAccountActivity"
+            android:screenOrientation="portrait"
             android:label="Account Setup" >
         </activity>
         <activity
             android:name=".activities.TwoHandedActivity"
+            android:screenOrientation="portrait"
             android:label="Two Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.TwoHandedTaskActivity"
+            android:screenOrientation="portrait"
             android:label="Two Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskActivityBase"
+            android:screenOrientation="portrait"
             android:label="Secluded Tasks" >
         </activity>
         <activity
             android:name=".activities.PhotoTaskActivity"
+            android:screenOrientation="portrait"
             android:label="Active Tasks" >
         </activity>
         <activity
             android:name=".activities.RandomActivitySplash"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
             android:label="Random Tasks"
             android:noHistory="true"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name=".activities.TasksCompleted"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_tasks_completed" >
         </activity>
     </application>
