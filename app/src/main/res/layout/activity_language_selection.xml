@@ -51,6 +51,7 @@
                     android:id="@+id/btnBack"
                     android:text="BACK"
                     android:background="@color/dark_gray"
+                    android:textColor="@color/white"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight=".10"

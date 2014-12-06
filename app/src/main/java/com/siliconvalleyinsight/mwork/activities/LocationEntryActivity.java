@@ -46,6 +46,7 @@ public class LocationEntryActivity extends Activity {
                 toast.show();
 
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
         });
