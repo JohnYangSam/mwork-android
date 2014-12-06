@@ -65,7 +65,7 @@
         </activity>
         <activity
             android:name=".activities.BetterCashOutActivity"
-            android:label="@string/title_activity_better_cash_out" >
+            android:label="Cash Out" >
         </activity>
         <activity
             android:name=".activities.CashoutBankActivity"
@@ -93,7 +93,7 @@
         </activity>
         <activity
             android:name=".activities.OneHandedTaskActivity"
-            android:label="@string/title_activity_one_handed_task" >
+            android:label="One Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskActivity"
@@ -117,23 +117,34 @@
         </activity>
         <activity
             android:name=".activities.SetupAccountActivity"
-            android:label="@string/title_activity_setup_account" >
+            android:label="Account Setup" >
         </activity>
         <activity
             android:name=".activities.TwoHandedActivity"
-            android:label="@string/title_activity_two_handed" >
+            android:label="Two Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.TwoHandedTaskActivity"
-            android:label="@string/title_activity_two_handed_task" >
+            android:label="Two Handed Tasks" >
         </activity>
         <activity
             android:name=".activities.SecludedTaskActivityBase"
-            android:label="@string/title_activity_secluded_task_activity_base" >
+            android:label="Secluded Tasks" >
         </activity>
         <activity
             android:name=".activities.PhotoTaskActivity"
-            android:label="@string/title_activity_photo_task" >
+            android:label="Active Tasks" >
+        </activity>
+        <activity
+            android:name=".activities.RandomActivitySplash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Random Tasks"
+            android:noHistory="true"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".activities.TasksCompleted"
+            android:label="@string/title_activity_tasks_completed" >
         </activity>
     </application>
 

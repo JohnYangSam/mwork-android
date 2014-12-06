@@ -30,7 +30,7 @@
     <string-array name="languages_array">
         <item>English</item>
     </string-array>
-    // Simulated database for dog test pictures        <string-array name="dog_test_imgs">
+    // Simulated database for dog test pictures                <string-array name="dog_test_imgs">
         <item>@drawable/dog_test_1</item>
         <item>@drawable/dog_test_2</item>
         <item>@drawable/dog_test_3</item>
@@ -63,5 +63,9 @@
 
     <string name="title_activity_secluded_task_activity_base">SecludedTaskActivityBase</string>
     <string name="title_activity_photo_task">PhotoTaskActivity</string>
+    <string name="title_activity_random_activity_splash">RandomActivitySplash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_tasks_completed">TasksCompleted</string>
 
 </resources>
